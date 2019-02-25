@@ -1,0 +1,12 @@
+E:\projects\AttKeeper2\test\BioTest\bin\Debug\BioTest.exe.config
+E:\projects\AttKeeper2\test\BioTest\bin\Debug\BioTest.exe
+E:\projects\AttKeeper2\test\BioTest\bin\Debug\BioTest.pdb
+E:\projects\AttKeeper2\test\BioTest\bin\Debug\BioWrapper.dll
+E:\projects\AttKeeper2\test\BioTest\bin\Debug\BioWrapper.pdb
+E:\projects\AttKeeper2\test\BioTest\obj\Debug\BioTest.csprojResolveAssemblyReference.cache
+E:\projects\AttKeeper2\test\BioTest\obj\Debug\BioTest.Form1.resources
+E:\projects\AttKeeper2\test\BioTest\obj\Debug\BioTest.Properties.Resources.resources
+E:\projects\AttKeeper2\test\BioTest\obj\Debug\BioTest.csproj.GenerateResource.Cache
+E:\projects\AttKeeper2\test\BioTest\obj\Debug\BioTest.exe
+E:\projects\AttKeeper2\test\BioTest\obj\Debug\BioTest.pdb
+E:\projects\AttKeeper2\test\BioTest\obj\Debug\BioTest.Form2.resources

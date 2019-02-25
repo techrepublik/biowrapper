@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{86AF5968-7AF5-49AB-A27F-B4436BE7771A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BioWrapper</RootNamespace>
+    <AssemblyName>BioWrapper</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="bio\AttLog.cs" />
+    <Compile Include="bio\ConnectToDevices.cs" />
+    <Compile Include="bio\RtEvent.cs" />
+    <Compile Include="ent\Biometik.cs" />
+    <Compile Include="IUtil.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="sdk\32bit\commpro.dll" />
+    <Content Include="sdk\32bit\comms.dll" />
+    <Content Include="sdk\32bit\plcommpro.dll" />
+    <Content Include="sdk\32bit\plcomms.dll" />
+    <Content Include="sdk\32bit\plrscagent.dll" />
+    <Content Include="sdk\32bit\plrscomm.dll" />
+    <Content Include="sdk\32bit\pltcpcomm.dll" />
+    <Content Include="sdk\32bit\plusbcomm.dll" />
+    <Content Include="sdk\32bit\rscagent.dll" />
+    <Content Include="sdk\32bit\rscomm.dll" />
+    <Content Include="sdk\32bit\tcpcomm.dll" />
+    <Content Include="sdk\32bit\usbcomm.dll" />
+    <Content Include="sdk\32bit\usbstd.dll" />
+    <Content Include="sdk\32bit\zkemkeeper.dll" />
+    <Content Include="sdk\32bit\zkemsdk.dll" />
+    <Content Include="sdk\64bit\commpro.dll" />
+    <Content Include="sdk\64bit\comms.dll" />
+    <Content Include="sdk\64bit\plcommpro.dll" />
+    <Content Include="sdk\64bit\plcomms.dll" />
+    <Content Include="sdk\64bit\plrscagent.dll" />
+    <Content Include="sdk\64bit\plrscomm.dll" />
+    <Content Include="sdk\64bit\pltcpcomm.dll" />
+    <Content Include="sdk\64bit\plusbcomm.dll" />
+    <Content Include="sdk\64bit\rscagent.dll" />
+    <Content Include="sdk\64bit\rscomm.dll" />
+    <Content Include="sdk\64bit\tcpcomm.dll" />
+    <Content Include="sdk\64bit\usbcomm.dll" />
+    <Content Include="sdk\64bit\usbstd.dll" />
+    <Content Include="sdk\64bit\zkemkeeper.dll" />
+    <Content Include="sdk\64bit\zkemsdk.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="sdk\32bit\Delete_SDK_x86.bat" />
+    <None Include="sdk\32bit\Register_SDK_x86.bat" />
+    <None Include="sdk\64bit\Delete_SDK_x64.bat" />
+    <None Include="sdk\64bit\Register_SDK_x64.bat" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="gen\" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="zkemkeeper">
+      <Guid>{FE9DED34-E159-408E-8490-B720A5E632C7}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

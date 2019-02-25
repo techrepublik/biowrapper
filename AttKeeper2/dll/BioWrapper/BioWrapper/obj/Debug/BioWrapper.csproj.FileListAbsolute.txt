@@ -1,0 +1,7 @@
+E:\projects\AttKeeper2\dll\BioWrapper\BioWrapper\obj\Debug\BioWrapper.csprojResolveAssemblyReference.cache
+E:\projects\AttKeeper2\dll\BioWrapper\BioWrapper\obj\Debug\Interop.zkemkeeper.dll
+E:\projects\AttKeeper2\dll\BioWrapper\BioWrapper\obj\Debug\BioWrapper.csproj.ResolveComReference.cache
+E:\projects\AttKeeper2\dll\BioWrapper\BioWrapper\bin\Debug\BioWrapper.dll
+E:\projects\AttKeeper2\dll\BioWrapper\BioWrapper\bin\Debug\BioWrapper.pdb
+E:\projects\AttKeeper2\dll\BioWrapper\BioWrapper\obj\Debug\BioWrapper.dll
+E:\projects\AttKeeper2\dll\BioWrapper\BioWrapper\obj\Debug\BioWrapper.pdb
